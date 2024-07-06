@@ -12,7 +12,7 @@ class CustomBodyOfTable extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Table(
-      border: TableBorder.all(color: Colors.black),
+      border: TableBorder.all(color: const Color.fromARGB(255, 202, 181, 181)),
       defaultVerticalAlignment: TableCellVerticalAlignment.middle,
       children: [
         TableRow(
@@ -23,7 +23,7 @@ class CustomBodyOfTable extends StatelessWidget {
                   order.name,
                   style: const TextStyle(
                       color: Colors.white,
-                      fontWeight: FontWeight.bold),
+                      ),
                 ),
               ),
             ),
@@ -33,7 +33,7 @@ class CustomBodyOfTable extends StatelessWidget {
                   order.quantity,
                   style: const TextStyle(
                       color: Colors.white,
-                      fontWeight: FontWeight.bold),
+                     ),
                 ),
               ),
             ),
@@ -43,7 +43,7 @@ class CustomBodyOfTable extends StatelessWidget {
                   order.totalPrice,
                   style: const TextStyle(
                       color: Colors.white,
-                      fontWeight: FontWeight.bold),
+                      ),
                 ),
               ),
             ),

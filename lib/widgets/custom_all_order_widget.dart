@@ -1,5 +1,6 @@
 import 'package:cofee_system/util/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class CustomAllOrderWidget extends StatelessWidget {
   const CustomAllOrderWidget({
@@ -15,14 +16,14 @@ class CustomAllOrderWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         color: AppColors.secondcolor,
       ),
-      child: const Column(
+      child:  Column(
         children: [
-          Icon(
+          const Icon(
             Icons.verified_outlined,
             size: 150,
             color: Colors.white,
           ),
-          Text('all order',style: TextStyle(color: Colors.white,fontSize: 18),)
+          Text('all order'.tr,style: const TextStyle(color: Colors.white,fontSize: 18),)
         ],
       ),
     );
